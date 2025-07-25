@@ -22,7 +22,8 @@ public class RobotContainer {
   public final XboxController intakeController = new XboxController(Controllers.INTAKE_CONTROLLER);
 
   public final SwerveSubsystem swerve = new SwerveSubsystem(new File(Filesystem.getDeployDirectory(), "swerve"));
-  public final IntakeSubsystem intake = IntakeSubsystem.getInstance();
+  public static IntakeSubsystem intake = IntakeSubsystem.getInstance();
+
 
   public RobotContainer() {
 
