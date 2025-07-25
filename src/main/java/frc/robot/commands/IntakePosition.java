@@ -40,7 +40,7 @@ public class IntakePosition extends Command{
             if(setpoint > 230.0) setpoint = 230.0;
         }
 
-        subsystem.setPosition(output);
+        subsystem.setOutput(output);
 
     } catch(Exception e){
         System.out.println("erro ao colocar posição");

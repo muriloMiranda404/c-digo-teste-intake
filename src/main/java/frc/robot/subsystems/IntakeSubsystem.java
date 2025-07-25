@@ -60,7 +60,7 @@ public class IntakeSubsystem extends SubsystemBase{
        return output;
     }
 
-    public void setPosition(double saida){
+    public void setOutput(double saida){
         intake.set(saida);
     }
     
