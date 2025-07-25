@@ -8,7 +8,6 @@ public class IntakePosition extends Command{
     
     private IntakeSubsystem subsystem;
     private double setpoint;
-    private DutyCycleEncoder encoder = subsystem.getEncoder();
 
     double angulo;
     double output;
@@ -21,7 +20,6 @@ public class IntakePosition extends Command{
 
     @Override
     public void initialize(){
-        encoder.setDutyCycleRange(0, 360);
     }
 
     @Override
